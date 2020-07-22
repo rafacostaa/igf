@@ -1,0 +1,614 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br" ng-app="IGFSite">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143884724-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-143884724-1');
+    </script>
+    <title>Instituto Guiselini & Freitas</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <!-- Angular Reference -->
+    <script src="scripts/angular/angular.min.js"></script>
+    <script src="scripts/angular/angular-route.min.js"></script>
+    <script src="scripts/angular/angular-resource.min.js"></script>
+    <script src="scripts/spin.min.js"></script>
+    <script src="scripts/angular-loading-spinner.js"></script>
+    <script src="scripts/angular-spinner.min.js"></script>
+    <script src="scripts/adal.js"></script>
+    <script src="scripts/adal-angular.js"></script>
+    <script src="app/app.js"></script>
+    
+</head>
+<body ng-controller="indexController">
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+        <div class="container">
+            <a href="/" class="navbar-brand">
+                <img src="images/instituto-guiselini-freitas.png" alt="Instituto Guiselini Freitas" title="Instituto Guiselini Freitas">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="ftco-nav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#sobrenos" class="nav-link">Sobre Nós</a></li>
+                    <li class="nav-item"><a href="#fundadoras" class="nav-link">Fundadoras</a></li>
+                    <li class="nav-item"><a href="#especialidades" class="nav-link">Especialidades</a></li>
+                    <li class="nav-item"><a href="#cursos" class="nav-link">Cursos</a></li>
+                    <li class="nav-item"><a href="#projetossociais" class="nav-link">Projetos Sociais</a></li>
+                    <li class="nav-item"><a href="#agendeumaconsulta" class="nav-link">Contato</a></li>
+                    <!--</ul>
+                    <ul class="nav navbar-nav ml-auto">
+                        <li>
+                            <a href="#" class="nav-link"><img src="images/face.png" width="25" /></a>
+                        <li>
+                            <a href="#" class="nav-link"><img src="images/instagram.png" width="25" /></a>
+                        </li>
+                    </ul>-->
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="home">
+        <div id="carouselExampleControls" class="carousel slide  carousel-fade" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="overlay"></div>
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="images/Monalisa-Danielle.jpg" title="Dr Monalisa e Dr Danielle" alt="Dr Monalisa e Dr Danielle" id="monaedani">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/Lente-de-Contato-2.jpg" alt="Lente de Contato" title="Lente de Contato">
+                    <div class="legenda">Lente de Contato</div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/Lentes-e-Facetas-3.jpg" alt="Lentes e Facetas" title="Lentes e Facetas">
+                    <div class="legenda">Lente de Contato e Facetas</div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/FacetaEm2Dentes.jpg" alt="Facetas e Dentes" title="Facetas e Dentes">
+                    <div class="legenda">Faceta em Dois Dentes</div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/Clareamento-Resina.jpg" alt="Clareamento em Resina" title="Clareamento em Resina">
+                    <div class="legenda">Clareamento em Resina</div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/Lente-de-Contato-Inferiores.jpg" alt="Lente de Contato Inferior" title="Lente de Contato Inferior">
+                    <div class="legenda">Lente de Contato Inferior</div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/Resina.jpg" alt="Resina" title="Resina">
+                    <div class="legenda">Resina</div>
+                </div>
+
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/invisalign_background.jpg" alt="Invisalign" title="Invisalign">
+                    <div class="legenda">Invisalign</div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Próximo</span>
+            </a>
+        </div>
+    </section>
+    <section class="divisor"></section>
+    <section class="ftco-about d-md-flex" id="sobrenos">
+        <div class="one-half img" style="background-image: url(images/igf.jpg);"></div>
+        <div class="one-half ftco-animate">
+            <div class="overlap">
+                <div class="heading-section ftco-animate ">
+                    <span class="subheading">Descubra o</span>
+                    <h1 class="mb-4">Instituto Guiselini e Freitas</h1>
+                </div>
+                <div>
+                    <p>
+                        Em 2017, além de nossa AMIZADE, decidimos construir uma carreira juntas acreditando no mesmo ideal do atendimento humanizado e ALEGRE! Nossos pacientes são tratados como queridos amigos, começa no abraço de ACOLHIMENTO da primeira consulta, no cafezinho durante o bate papo descontraído, até chegar no atendimento personalizado... Resultado?
+                    </p>
+                    <p>
+                        Nosso bolo ficou maior que a forma. Em 2018, nasce o INSTITUTO GUISELINI & FREITAS. A união humanizada da odontologia e medicina num novo espaço. Nosso jeito extrovertido e acolhedor se reflete no conceito “HOME”, construímos uma extensão de nosso lar para receber nossos amigos. Pensamos com carinho em todos os detalhes. Desde nossa alegre recepção, até nossa sala aconchegante.
+                    </p>
+                    <p>Sejam bem-vindos à nossa CASA, sejam bem-vindos ao IGF.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="divisor"></section>
+    <section class="ftco-section ftco-services">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 ftco-animate">
+                    <div class="media d-block text-center block-6 services">
+                        <div class="icon d-flex justify-content-center align-items-center mb-5">
+                            <img src="images/ortodontia.png" width="70">
+                        </div>
+                        <div class="media-body">
+                            <h3 class="heading">Ortodontia</h3>
+                            <p>O tratamento ortodôntico torna a boca mais saudável, proporciona uma aparência mais agradável e dentes com possibilidade de durar a vida toda.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 ftco-animate">
+                    <div class="media d-block text-center block-6 services">
+                        <div class="icon d-flex justify-content-center align-items-center mb-5">
+                            <img src="images/estetica-do-sorriso.png" width="70">
+                        </div>
+                        <div class="media-body">
+                            <h3 class="heading">Estética do Sorriso</h3>
+                            <p>Utilizando as principais técnicas e procedimentos que permitem alcançar seu sorriso ideal.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 ftco-animate">
+                    <div class="media d-block text-center block-6 services">
+                        <div class="icon d-flex justify-content-center align-items-center mb-5">
+                            <img src="images/harmonizacao-facial.png" width="70">
+                        </div>
+                        <div class="media-body">
+                            <h3 class="heading">Harmonização Facial</h3>
+                            <p>Procedimentos estéticos, que deixam em harmonia o sorriso, os dentes, os olhos, enfim o rosto de uma forma geral.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="divisor"></section>
+    <section class="ftco-about d-md-flex" id="fundadoras">
+        <div class="one-half ftco-animate">
+            <div class="overlap">
+                <div class="heading-section ftco-animate ">
+                    <span class="subheading">Conhecendo as</span>
+                    <h2 class="mb-4">Fundadoras</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-4"><img class="fundadorafoto" src="images/monalisa-guiselini.jpg" title="Monalisa Guiselini" alt="Monalisa Guiselini" /></div>
+                    <div class="col-md-8">
+                        <div class="heading-section text-md-left ftco-animate">
+                            <span class="subheading" style="font-size:40px">Dra</span>
+                            <h3 class="mb-4">Monalisa Guiselini</h3>
+                        </div>
+                        Cirurgiã Dentista Especializada em Implantodontia, Mestre em Biofotonica aplicada à Ciência da Saúde e atuante em Odontologia Estética - CRO 103730.
+                        <ul class="nav navbar-nav ml-auto">
+                            <li>
+                                <a href="https://www.facebook.com/monalisa.guiselini" class="nav-link"><img src="images/face.png" title="facebook" alt="facebook" width="25" /></a>
+                                <a href="https://www.instagram.com/dra.monaguiselini/" class="nav-link"><img src="images/instagram.png" title="instagram" alt="instagram" width="25" /></a>
+                            </li>
+                        </ul>
+                        <!--<a href="#" class="btn btn-primary btn-outline-primary px-2 py-1">Saiba Mais</a>-->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4"><img class="fundadorafoto" src="images/danielle-freitas.jpg" title="Danielle Freitas" alt="Danielle Freitas" /></div>
+                    <div class="col-md-8">
+                        <div class="heading-section text-md-left ftco-animate">
+                            <span class="subheading" style="font-size:40px">Dra</span>
+                            <h3 class="mb-4">Danielle Freitas</h3>
+                        </div>
+                        Cirurgiã dentista especializada em Ortodontia  - CRO 112917
+                        <ul class="nav navbar-nav ml-auto">
+                            <li>
+                                <a href="https://www.facebook.com/danielle.freitas.948011" class="nav-link"><img src="images/face.png" title="facebook" alt="facebook" width="25" /></a>
+                                <a href="https://www.instagram.com/dra.danifreitas/" class="nav-link"><img src="images/instagram.png" title="instagram" alt="instagram" width="25" /></a>
+                            </li>
+                        </ul>
+                        <!--<a href="#" class="btn btn-primary btn-outline-primary px-2 py-1">Saiba Mais</a>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="one-half img" style="background-image: url(images/fundadoras.jpg);"></div>
+    </section>
+    <section class="divisor"></section>
+    <section class="ftco-counter ftco-bg-dark img" id="section-counter" style="background-image: url(images/invisalign.jpg);" data-stellar-background-ratio="0.5">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="heading-section text-md-right ftco-animate">
+                <!--<span class="subheading2" style="">Focamos no atendimento humanizado de suas necessidades...</span>-->
+                <h3 class="mb-4"></h3>
+            </div>
+        </div>
+    </section>
+    <section class="divisor"></section>
+    <section class="ftco-section" id="especialidades">
+        <div class="container">
+            <div class="row justify-content-center mb-5 pb-3">
+                <div class="col-md-7 heading-section ftco-animate text-center">
+                    <span class="subheading">Nossas</span>
+                    <h2 class="mb-4">Especialidades    </h2>
+                    <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget luctus lectus. Etiam facilisis turpis eget est rhoncus molestie. Maecenas convallis condimentum tristique. Duis non rhoncus nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent mollis leo vitae tortor rhoncus, quis gravida </p>-->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="menu-entry">
+                        <a class="img" style="background-image: url(images/ortodontia.jpg);"></a>
+                        <div class="text text-center pt-4">
+                            <h3><a>Ortodontia</a></h3>
+                            <!--<p>A small river named Duden flows by their place and supplies</p>-->
+                            <!--<p><a href="#" class="btn btn-primary btn-outline-primary">Saiba mais</a></p>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="menu-entry">
+                        <a class="img" style="background-image: url(images/dentistica.jpg);"></a>
+                        <div class="text text-center pt-4">
+                            <h3><a>Dentística</a></h3>
+                            <!--<p>Tratamento realizado para a cura de processos inflamatórios e infecciosos da gengiva.</p>-->
+                            <!--<p><a href="#" class="btn btn-primary btn-outline-primary">Saiba mais</a></p>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="menu-entry">
+                        <a class="img" style="background-image: url(images/periodontia.jpg);"></a>
+                        <div class="text text-center pt-4">
+                            <h3><a>Periodontia</a></h3>
+                            <!--<p>A small river named Duden flows by their place and supplies</p>-->
+                            <!--<p><a href="#" class="btn btn-primary btn-outline-primary">Saiba mais</a></p>-->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="menu-entry">
+                        <a class="img" style="background-image: url(images/cirurgia.jpg);"></a>
+                        <div class="text text-center pt-4">
+                            <h3><a>Cirurgia</a></h3>
+                            <!--<p>A small river named Duden flows by their place and supplies</p>-->
+                            <!--<p><a href="#" class="btn btn-primary btn-outline-primary">Saiba mais</a></p>-->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="menu-entry">
+                        <a class="img" style="background-image: url(images/protese.jpg);"></a>
+                        <div class="text text-center pt-4">
+                            <h3><a>Prótese</a></h3>
+                            <!--<p>A small river named Duden flows by their place and supplies</p>-->
+                            <!--<p><a href="#" class="btn btn-primary btn-outline-primary">Saiba mais</a></p>-->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="menu-entry">
+                        <a class="img" style="background-image: url(images/endodontia.jpg);"></a>
+                        <div class="text text-center pt-4">
+                            <h3><a>Endodontia</a></h3>
+                            <!--<p>A small river named Duden flows by their place and supplies</p>-->
+                            <!--<p><a href="#" class="btn btn-primary btn-outline-primary">Saiba mais</a></p>-->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="menu-entry">
+                        <a class="img" style="background-image: url(images/implant.jpg);"></a>
+                        <div class="text text-center pt-4">
+                            <h3><a>Implantodontia</a></h3>
+                            <!--<p>A small river named Duden flows by their place and supplies</p>-->
+                            <!--<p><a href="#" class="btn btn-primary btn-outline-primary">Saiba mais</a></p>-->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="menu-entry">
+                        <a class="img" style="background-image: url(images/odontopediatria.jpg);"></a>
+                        <div class="text text-center pt-4">
+                            <h3><a>Odontopediatria</a></h3>
+                            <!--<p>A small river named Duden flows by their place and supplies</p>-->
+                            <!--<p><a href="#" class="btn btn-primary btn-outline-primary">Saiba mais</a></p>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="menu-entry">
+                        <a class="img" style="background-image: url(images/harmonizacaofacial.jpg);"></a>
+                        <div class="text text-center pt-4">
+                            <h3><a>Harmonização Facial</a></h3>
+                            <!--<p>A small river named Duden flows by their place and supplies</p>-->
+                            <!--<p><a href="#" class="btn btn-primary btn-outline-primary">Saiba mais</a></p>-->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="menu-entry">
+                        <a class="img" style="background-image: url(images/clareamentoemresina.jpg);"></a>
+                        <div class="text text-center pt-4">
+                            <h3><a>Clareamento em Resina</a></h3>
+                            <!--<p>A small river named Duden flows by their place and supplies</p>-->
+                            <!--<p><a href="#" class="btn btn-primary btn-outline-primary">Saiba mais</a></p>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="ftco-menu" id="cursos">
+        <div class="container">
+            <div class="row justify-content-center mb-3">
+                <div class="col-md-7 heading-section text-center ftco-animate">
+                    <span class="subheading">Saiba sobre</span>
+                    <h2 class="mb-4">Nossos Cursos</h2>
+                </div>
+            </div>
+            <div class="row justify-content-left">
+                
+                <div class="col-md-6 ftco-animate col-xs-12 ">
+                    <div class="media d-block text-center block-6 curso-item">
+                        <div class="icon d-flex justify-content-center align-items-center mb-3">
+                            <img src="images/estetica-do-sorriso.png" title="Estetica do Sorriso" alt="Estetica do Sorriso" width="100">
+                        </div>
+                        <div class="row justify-content-center media-body">
+                            <h3 class="heading">Imersão em Laminados Cerâmicos</h3>
+                            <p>
+                                Hoje a lente de contato dental é uma das técnicas mais procuradas nos consultórios de odontológicos por pacientes que buscam melhorar a estética de seu sorriso. A dentista Monalisa Guiselini ministra o curso de Lente de Contato Dental voltado para dentistas, trazendo aspectos do dia-a-dia do consultório, apresentado casos reais com pacientes para diagnóstico, planejamento e plano de tratamento.
+                            </p>
+                            <div class="psl-button"><a target="_blank" data-toggle="modal"  ng-click="mostarModal()">Faça a sua Inscrição!</a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 ftco-animate col-xs-12 ">
+                    <div class="media d-block text-center block-6 curso-item">
+                        <div class="icon d-flex justify-content-center align-items-center mb-3">
+                            <img src="images/estetica-do-sorriso.png" title="Estetica do Sorriso" alt="Estetica do Sorriso" width="100">
+                        </div>
+                        <div class="row justify-content-center media-body">
+                            <h3 class="heading">Em Breve</h3>
+                            <br>
+                            <p>
+                               Em breve
+                            </p>
+                            <br>
+                            <div class="psl-button"><a target="_blank" href="">Faça a sua Inscrição!</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="divisor"></section>
+    <section class="ftco-section img" id="ftco-testimony" style="background-image: url(images/fundo.jpg);" data-stellar-background-ratio="0.5">
+        <div class="overlay2"></div>
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-md-7 heading-section text-center ftco-animate">
+                    <span class="subheading">Depoimentos</span>
+                    <h2 class="mb-4">Clientes Satisfeitos</h2>
+                    <!--<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>-->
+                </div>
+            </div>
+        </div>
+        <div class="container-wrap">
+            <div class="row d-flex no-gutters">
+                <div class="col-lg align-self-sm-end ftco-animate">
+                    <div class="testimony">
+                        <blockquote>
+                            <p>&ldquo;Acompanho o trabalho da Doutora Monalisa pelo Instagram, tive o prazer de assistir uma reabilitação durante uma ação social, sempre prezando por uma Odontologia de excelência, muita inspiração acompanhar seus trabalhos.&rdquo;</p>
+                        </blockquote>
+                        <div class="author d-flex mt-4">
+                            <div class="image mr-3 align-self-center">
+                                <!--<img src="images/person_1.jpg" alt="">-->
+                            </div>
+                            <div class="name align-self-center">Aryan Bohlant</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg align-self-sm-end">
+                    <div class="testimony overlay2">
+                        <blockquote>
+                            <p>&ldquo;Super confio, mega profissional e competente! Amo muito.&rdquo;</p>
+                        </blockquote>
+                        <div class="author d-flex mt-4">
+                            <div class="image mr-3 align-self-center">
+                                <!--<img src="images/person_2.jpg" alt="">-->
+                            </div>
+                            <div class="name align-self-center">Helen Ganzarolli</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg align-self-sm-end">
+                    <div class="testimony overlay2">
+                        <blockquote>
+                            <p>&ldquo;Obrigada por me deixar com este sorriso tão perfeito a ponto de todo mundo achar que são lentes de contato!&rdquo;</p>
+                        </blockquote>
+                        <div class="author d-flex mt-4">
+                            <div class="image mr-3 align-self-center">
+                                <!--<img src="images/person_2.jpg" alt="">-->
+                            </div>
+                            <div class="name align-self-center">Nay Fernandes</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="divisor"></section>
+
+    <section class="ftco-about d-md-flex" id="projetossociais">
+        <div class="one-half img" style="background-image: url(images/voluntario1.jpg);"></div>
+        <div class="one-half img ftco-animate">
+            <div class="overlap">
+                <div class="heading-section ftco-animate ">
+                    <span class="subheading">Voluntariado</span>
+                    <h2 class="mb-4">Projetos Sociais</h2>
+                </div>
+                <div>
+                    <p>
+                        Começar a modificar a sociedade não precisa de grandes passos.
+                    </p>
+                    <p>Participamos como voluntários em duas ONGs que fazem um trabalho incrível:</p>
+                    <img src="images/por1sorriso.png" alt="Por um Sorriso" title="Por um Sorriso" />
+                    <img src="images/missaoafrica.png" alt="Missao Africa" title="Missao Africa" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="divisor"></section>
+    <section class="ftco-gallery">
+        <div class="container-wrap">
+            <div class="row no-gutters">
+                <div class="col-md-3 ftco-animate">
+                    <div href="gallery.html" class="gallery img d-flex align-items-center" style="background-image: url(images/foto4.jpg);">
+
+                    </div>
+                </div>
+                <div class="col-md-3 ftco-animate">
+                    <div href="gallery.html" class="gallery img d-flex align-items-center" style="background-image: url(images/foto1.jpg);">
+
+                    </div>
+                </div>
+                <div class="col-md-3 ftco-animate">
+                    <div href="gallery.html" class="gallery img d-flex align-items-center" style="background-image: url(images/foto7.jpg);">
+
+                    </div>
+                </div>
+                <div class="col-md-3 ftco-animate">
+                    <div href="gallery.html" class="gallery img d-flex align-items-center" style="background-image: url(images/foto6.jpg);">
+
+                    </div>
+                </div>
+                <div class="col-md-4 ftco-animate">
+                    <div href="gallery.html" class="gallery img d-flex align-items-center" style="background-image: url(images/foto3.jpg);">
+
+                    </div>
+                </div>
+                <div class="col-md-4 ftco-animate">
+                    <div href="gallery.html" class="gallery img d-flex align-items-center" style="background-image: url(images/foto5.jpg);">
+
+                    </div>
+                </div>
+                <div class="col-md-4 ftco-animate">
+                    <div href="gallery.html" class="gallery img d-flex align-items-center" style="background-image: url(images/foto2.jpg);">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="divisor"></section>
+    <section class="ftco-menu" id="agendeumaconsulta">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-7 heading-section text-center ftco-animate">
+                    <span class="subheading">Fale conosco</span>
+                    <h2 class="mb-4">Agende uma consulta</h2>
+                    <p>Av. Rouxinol, 60, conjunto 501 - Indianópolis - São Paulo - CEP: 04516-000</p>
+                    <p> <a href="tel:+551138926516" target="_blank">Telefone: (11) 3892-6516</a></p>
+                    <p><a target="_blank" href="https://api.whatsapp.com/send?phone=5511986752249">WhatsApp: (11) 98675-2249</a></p>
+                    <p>
+                        Redes Sociais Monalisa:   <a href="https://www.facebook.com/monalisa.guiselini" class="nav-link"><img src="images/face.png" title="facebook" alt="facebook" width="25" /></a>
+                        <a href="https://www.instagram.com/dra.monaguiselini/" class=""><img src="images/instagram.png" width="25" title="instagram" alt="instagram" /></a>
+                    </p>
+                    <p>
+                        Redes Sociais Danielle:    <a href="https://www.facebook.com/danielle.freitas.948011" class="nav-link"><img src="images/face.png" width="25" title="facebook" alt="facebook" /></a>
+                        <a href="https://www.instagram.com/dra.danifreitas/" class=""><img src="images/instagram.png" width="25" title="instagram" alt="instagram" /></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-sm">
+      
+          <!-- Modal content-->
+          <div class="modal-content modal-popout-bg">
+                <div class="modal-header">
+                    <h6 class="modal-title font-black">Imersão em Laminados Cerâmicos</h6>    
+                    <button type="button" class="close" data-dismiss="modal">&times;</button> 
+                </div>
+                <div class="modal-body justify-content-center">
+                        <form>
+                            <div class="center-div">
+                                <i class="fa fa-user-circle" aria-hidden="true"></i> <input class="nome" type="text" name="nome" id="nome" placeholder="Nome Completo" ng-model="Email.RemetenteNome">
+                            </div>
+                            <div>
+                                <input class="cpf" type="text" name="cpf" id="cpf" placeholder="CPF" ng-model="Email.RemetenteCpf">
+                            </div>
+                            <div>
+                                <input class="rg" type="text" name="rg" id="rg" placeholder="RG" ng-model="Email.RemetenteRg">
+                            </div>
+                            <div>
+                                <input class="email" type="text" name="email" id="email" placeholder="E-mail" ng-model="Email.RemetenteEmail">
+                            </div>
+                            <div>
+                                <input class="dataNascimento" type="text" name="dataNascimento" id="dataNascimento" placeholder="Data de Nascimento" ng-model="Email.DataNascimento">
+                            </div>
+                            <div>
+                                <input class="telefone" type="text" name="telefone" id="telefone" placeholder="WhatsApp" ng-model="Email.RemetenteTelefone">
+                            </div> 
+                            <div>
+                                <input class="cep" type="text" name="cep" id="cep" placeholder="CEP" ng-model="Email.RemetenteCep">
+                            </div> 
+                            <div>                      
+                                <input class="submit" type="submit" value="Enviar" ng-click="enviarWhatsApp(Email, 'Imersão em Laminados Cerâmicos')">
+                            </div> 
+                          </form> 
+                </div>
+          </div>
+      
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/jquery.timepicker.min.js"></script>
+    <script src="js/scrollax.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+ 
+</html>
